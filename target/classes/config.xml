@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p ="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!--  
+  <bean class="mavendemo.Maven.Student" name="bean1" p:id="201" p:name="shalu"/>
+  <bean class="mavendemo.Maven.Student" name="bean2" p:id="202" p:name="avi"/>
+  --> 
+  
+  <!-- THIS IS SHALINI'S BEANS PROGRAM-->
+  <bean class="mavendemo.Maven.Student" name="bean1">
+  	<property name="id">
+  	<value>143</value>
+  	</property>
+  	<property name="name">
+  	<value>shalini avinash</value>
+  	</property>
+  </bean>
+  
+  
+  <!-- another way of passing the valoues to propeerties -->
+  
+  <!--  
+  <bean class="mavendemo.Maven.Student" name="bean1">
+  	<property name="id" value="201"/>
+  	<property name="name" value="unnati"/>
+  	</bean>
+  	
+  	<bean class="mavendemo.Maven.Student" name="bean2">
+  	<property name="id" value="202"/>
+  	<property name="name" value="manasvita"/>
+  	</bean>
+  	-->
+  </beans>

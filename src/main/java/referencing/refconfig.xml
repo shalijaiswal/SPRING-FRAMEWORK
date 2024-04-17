@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p ="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!--   <bean class="referencing.B" name="bref" p:y="36"/>-->
+ <!-- bean class="referencing.A" name="aref" p:x="65" p:ob-ref="bref"/ -->
+ 
+ 
+ <bean class="referencing.B" name="bref">
+ <property name="y" value="36"/>
+ </bean>
+
+<bean class="referencing.A" name="aref">
+<property name="x" value="65"/>
+<property name="ob">
+<ref bean="bref"/>
+</property>
+</bean>
+
+  
+  </beans>
